@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            /*border: dotted 1px grey;*/
+        }
+        div#flexcontainer {
+            display: flex;
+        }
+        div#flexcontainer div {
+            /*padding:5px;*/
+        }
+        ul li {
+            list-style: none;
+        }
+        body {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        div.form-group {
+            width: 500px;
+            padding: 20px;
+        }
+
+        input {
+            float: right;
+            width: 300px;
+        }
+
+        form ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        form ul li {
+            padding: 10px;
+        }
+
+        form ul li input {
+            position: absolute;
+            padding: 10px;
+        }
+        div#lekkereten {
+            width: 90%;
+            margin-left: 10%;
+            margin-top: 200px;
+            margin-right: 210px;
+            display:grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 20px 20px 20px;
+            align-items:flex-end;
+        }
+        div#sperziebonen{
+            /*position:absolute;*/
+            display:flex;
+            margin-right: 50px;
+            align-items:flex-end;
+
+        }
+        div#aardappelen{
+            /*position:absolute;*/
+            display:flex;
+            margin-right:50px;
+            align-items:flex-end;
+        }
+        div.foodselection {
+            display: flex;
+            justify-content: flex-start;
+        }
+        input.foodtype {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="flexcontainer">
+    <div id="kolom1">
+        <form action="http://www.savatarian.com/html5/form.php" method="get">
+            <ul>
+                <div.columnflex>
+                    <div id="columnflex">
+                        <li>
+                            <h1>Formuliertje</h1>
+                        </li>
+                        <li>
+                            <h2>Burton Education</h2>
+                        </li>
+                        <div class="form-group">
+                            <label for="Voornaam"> Voornaam:</label>
+                            <input type="text" name="voornaam" id="Voornaam" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tussenvoegsel">Tussenvoegsel:</label>
+                            <input type="text" name="Tussenvoegsel" id="Tussenvoegsel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="achternaam"> Achternaam:</label>
+                            <input type="text" name="Achternaam" id="Achternaam" required>
+                        </div>
+                        <li>
+                            <label>geslacht:</label>
+                            <input type="radio" name="geslacht" value="man" id="geslacht">man
+                        </li>
+                        <li>
+                            <label>geslacht:</label>
+                            <input type="radio" name="geslacht" value="vrouw" id="vrouw">vrouw
+                        </li>
+                        <div class="form-group">
+                            <label for="kleurogen">kleur ogen:</label>
+                            <select id="kleurogen">
+                                <option>groen</option>
+                                <option>blauw</option>
+                                <option>bruin</option>
+                            </select>
+                        </div>
+                        <li>
+                            <input type="date" name="geboortedatum"/>
+                        </li>
+                        <br> <br> <br>
+                        <div id="textflex">
+                            <label>Omschrijving</label>
+                            <textarea cols="60" rows="10" name="Omschrijving"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <li>
+                                <input type="submit" name="knop">
+                            </li>
+                        </div>
+                    </div>
+                </div.columnflex>
+            </ul>
+        </div>
+
+    <div id="kolom2">
+        <div id="lekkereten">
+            <!--1-->
+            <label>Lekker eten:</label>
+            <!--2-->
+            <div class="foodselection">
+                <input class="foodtype" type="checkbox" name="eten" value="sperziebonen">
+                <label>Sperziebonen</label>
+            </div>
+            <!--3-->
+            <div></div>
+            <!--4-->
+            <div class="foodselection">
+                <input class="foodtype" type="checkbox" name="meereten" value="aardappelen">
+                <label>Aardappelen</label>
+            </div>
+            <!--5-->
+            <div></div>
+            <!--6-->
+            <div class="foodselection">
+                <input class="foodtype" type="checkbox" name="meereten" value="hamburger">
+                <label>Hamburger</label>
+            </div>
+        </div>
+    </div>
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burton Education</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+        body {
+            font-family: Ubuntu, sans-serif;
+        }
+
+        div.form-group {
+            width: 500px;
+            padding: 20px;
+        }
+
+        div.form-lekkereten {
+            float: right;
+            width: 100px;
+        }
+
+        input {
+            float: right;
+            width: 300px;
+        }
+
+        form ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        form ul li {
+            padding: 10px;
+        }
+
+        form ul li input {
+            position: absolute;
+            padding: 10px;
+        }
+
+        div#textflex {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        div#column1flex {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        div#columnflex {
+            /*display:flex;*/
+            /*flex-direction:row;*/
+            /*align-items:flex-start;*/
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="kolom1">
+    <div id="column1flex">
+        <label>Lekker eten:</label>
+        <br> <br>
+        <input type="checkbox" name="eten" value="sperziebonen">sperziebonen
+        <br> <br>
+        <input type="checkbox" name="meereten" value="aardappelen">aardappelen
+        <br> <br>
+        <input type="checkbox" name="meereten" value="hamburger">hamburger
+    </div>
+</div>
+<form action="http://www.savatarian.com/html5/form.php" method="get">
+    <ul>
+        <div.columnflex>
+            <div id="columnflex">
+                <li>
+                    <h1>Formuliertje</h1>
+                </li>
+                <li>
+                    <h2>Burton Education</h2>
+                </li>
+                <div class="form-group">
+                    <label for="Voornaam"> Voornaam:</label>
+                    <input type="text" name="voornaam" id="Voornaam" required>
+                </div>
+                <div class="form-group">
+                    <label for="tussenvoegsel">Tussenvoegsel:</label>
+                    <input type="text" name="Tussenvoegsel" id="Tussenvoegsel" required>
+                </div>
+                <div class="form-group">
+                    <label for="achternaam"> Achternaam:</label>
+                    <input type="text" name="Achternaam" id="Achternaam" required>
+                </div>
+                <li>
+                    <label>geslacht:</label>
+                    <input type="radio" name="geslacht" value="man" id="geslacht">man
+                </li>
+                <li>
+                    <label>geslacht:</label>
+                    <input type="radio" name="geslacht" value="vrouw" id="vrouw">vrouw
+                </li>
+                <div class="form-group">
+                    <label for="kleurogen">kleur ogen:</label>
+                    <select id="kleurogen">
+                        <option>groen</option>
+                        <option>blauw</option>
+                        <option>bruin</option>
+                    </select>
+                </div>
+                <li>
+                    <input type="date" name="geboortedatum"/>
+                </li>
+                <br> <br> <br>
+                <div id="textflex">
+                    <label>Omschrijving</label>
+                    <textarea cols="60" rows="10" name="Omschrijving"></textarea>
+                </div>
+                <div class="form-group">
+                    <li>
+                        <input type="submit" name="knop">
+                    </li>
+                </div>
+            </div>
+        </div.columnflex>
+    </ul>
+</form>
+</body>
+</html>
