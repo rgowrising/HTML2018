@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+}
+body{
+background-color:white;
+    font-family: 'Raleway', sans-serif;
+}
+div#wrapper{
+    background-color:rgb(250,241,234);
+    align-items:center;
+}
+header{
+    background-color:rgb(192,240,223);
+    text-align:center;
+}
+img#logo{
+    width:20px;
+}
+ul{
+    padding:0px;
+    margin:0px;
+}
+p {
+    min-width: 100%;
+}
+li{
+    background-color:rgb(128,128,128);
+    padding:10px;
+    padding-left: 20px;
+    border-top:1px solid white;
+}
+li a{
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+h3{
+    color:rgb(220,106,94);
+    font-weight:600;
+}
+section,footer{
+    padding:20px;
+}
+footer{
+    padding:20px;
+    background-color:rgb(128,128,128);
+    color:white;
+    clear:both;
+
+}
+footer h3{
+    color:white;
+}
+img{
+    width:50%;
+}
+div#container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#instrumenten {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media all and (min-width:550px) {
+
+    * {
+        /*border: dotted 1px grey;*/
+    }
+
+    section#nieuws {
+        width: 100%;
+    }
+
+    article{
+        display:inline-block;
+        width:100%;
+        margin-right:20px;
+    }
+    article:nth-child(even){
+        margin-right:0px;
+
+    }
+}
+@media all and (min-width:920px){
+
+
+    section#trompet{
+        width:95%;
+        float:left;
+
+    }
+    section#saxofoon{
+        width:95%;
+        float:left;
+    }
+
+}
+@media all and (min-width:1200px){
+    div#wrapper{
+        width:1200px;
+        margin:auto;
+    }
+}
